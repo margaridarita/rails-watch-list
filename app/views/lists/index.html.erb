@@ -1,15 +1,26 @@
-<main>
+<div class="pt-20">
+  <%= render "shared/banner" %>
 
-  <div style="background-image: url(<%= asset_path 'banner.jpeg' %>); background-size: cover; background-position: center; padding: 40px 60px 200px">
-    <h1>Save any movie!</h1>
-    <h6>Ack Ack... ACK ACK!</h6>
-  </div>
+  <main class="container p-5">
 
-<!--  <div class="flex-column col-3 justify-content-center align-items-center ">-->
-    <%# @lists.each do |list| %>
-<!--      <div class="col-4">-->
-        <%#= list.name %>
-<!--      </div>-->
-    <%# end %>
-<!--  </div>-->
-</main>
+    <h2 class="text-center mb-8">
+      What's your mood today?
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <% @lists.each do |list| %>
+        <div class="flex flex-col mb-4 shadow-sm">
+          <% if list.picture.attached? %>
+            <%= image_tag list.picture, class: "h-48 w-full object-cover" %>
+          <% else %>
+            <img class="card-img-top h-48 w-full object-cover" src="..." alt="Card image cap">
+          <% end %>
+          <div class="flex flex-col text-center p-4 bg-white">
+            <h5 class="flex-grow m-0"><%= list.name %></h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  </main>
+</div>
