@@ -1,12 +1,12 @@
-<nav class="d-flex flex-row justify-content-between align-items-center bg-black fixed top-0 left-0 w-full z-50 shadow-lg" style="padding: 15px 35px;">
+<nav class="flex flex-row justify-between bg-black w-full shadow-lg p-4">
 
   <%= link_to root_path do %>
-    <%= image_tag "logo.png", alt: "Logo", style: "width: 50px; height: 50px;"%>
+    <%= image_tag "logo.png", alt: "Logo", class: "w-12 h-12" %>
   <% end %>
 
-  <div class="d-flex flex-row justify-content-start align-items-center">
-    <%= link_to "My lists", root_path, class: "btn btn-outline-light mx-2" %>
-    <%= link_to "New list", new_list_path, class: "btn btn-outline-light mx-2" %>
+  <div class="flex flex-row justify-start items-center gap-4">
+    <%= link_to "My lists", root_path, class: "text-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
+    <%= link_to "New list", new_list_path, class: "text-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
   </div>
 
 </nav>
