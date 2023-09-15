@@ -5,8 +5,16 @@
   <% end %>
 
   <div class="flex flex-row justify-start items-center gap-4">
-    <%= link_to "My lists", root_path, class: "text-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
-    <%= link_to "New list", new_list_path, class: "text-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
+    <% if current_page?(root_path) %>
+      <%= link_to "My lists", root_path, class: "text-black bg-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
+    <% else %>
+      <%= link_to "My lists", root_path, class: "text-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
+    <% end %>
+    <% if current_page?(new_list_path) %>
+      <%= link_to "New list", new_list_path, class: "text-black bg-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
+    <% else %>
+      <%= link_to "New list", new_list_path, class: "text-white px-4 py-2 border border-white rounded hover:bg-white hover:text-black transition duration-200" %>
+    <% end %>
   </div>
 
 </nav>
