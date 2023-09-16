@@ -1,26 +1,13 @@
-<div class="pt-20">
-  <%= render "shared/banner" %>
+<%= render "shared/banner" %>
 
-  <main class="container p-5">
+<main class="px-4">
 
-    <h2 class="text-center mb-8">
-      What's your mood today?
-    </h2>
+  <h2 class="text-xl text-center text-orange-600 font-bold py-8">
+    What's your mood today?
+  </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <% @lists.each do |list| %>
-        <div class="flex flex-col mb-4 shadow-sm">
-          <% if list.picture.attached? %>
-            <%= image_tag list.picture, class: "h-48 w-full object-cover" %>
-          <% else %>
-            <img class="card-img-top h-48 w-full object-cover" src="..." alt="Card image cap">
-          <% end %>
-          <div class="flex flex-col text-center p-4 bg-white">
-            <h5 class="flex-grow m-0"><%= list.name %></h5>
-          </div>
-        </div>
-      <% end %>
-    </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <%= render @lists %>
+  </div>
 
-  </main>
-</div>
+</main>
