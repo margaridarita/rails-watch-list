@@ -1,6 +1,6 @@
-<div class="flex flex-col mb-4 shadow-sm">
+<div class="flex flex-col mb-4 shadow-md w-48">
   <% unless bookmark.movie.poster_url.blank? %>
-    <%= image_tag bookmark.movie.poster_url, class: "h-40 w-full object-cover" %>
+    <%= image_tag bookmark.movie.poster_url, class: "h-400 w-full object-cover object-top" %>
   <% else %>
     <img class= "h-40 w-full object-cover" src="..." alt="">
   <% end %>
