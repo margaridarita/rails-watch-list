@@ -1,0 +1,15 @@
+<%= link_to list_path(list) do %>
+  <div class="flex flex-col mb-4 shadow-sm">
+
+    <% if list.picture.attached? %>
+      <%= image_tag list.picture, class: "h-40 w-full object-cover" %>
+    <% else %>
+      <img class= "h-40 w-full object-cover" src="..." alt="">
+    <% end %>
+
+    <div class="flex flex-col text-center p-4 bg-white">
+      <h5 class="text-lg text-green-600"><%= list.name %></h5>
+    </div>
+
+  </div>
+<% end %>
