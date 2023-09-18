@@ -1,15 +1,1 @@
-<main class="px-4">
-  <div class="flex flex-row items-center text-xl">
-    <%= link_to :back do %>
-      <i class="fa-sharp fa-solid fa-circle-left pr-4" style="color: #000000;"></i>
-    <% end %>
-
-    <h2 class="text-orange-600 font-bold py-8">
-      <%= @list.name %>
-    </h2>
-  </div>
-
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-    <%= render @bookmarks %>
-  </div>
-</main>
+<%= render "shared/movies", params: { page: @list.name, movies: @movies }%>
