@@ -71,3 +71,4 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 
 gem "tailwindcss-rails", "~> 2.0"
+gem 'pg_search', '~> 2.3', '>= 2.3.6'
