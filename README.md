@@ -1,24 +1,39 @@
-# README
+## Rails Watch List
+![application_logo](https://github.com/margaridarita/rails-watch-list/assets/110779743/3d1d07e7-5d43-4745-85cd-f4f3995c7b5a)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a web application to save movies in watch lists and recommend them to friends 📼
 
-Things you may want to cover:
+## Demo
+(todo)
 
-* Ruby version
+## Technologies Used
+* Ruby
+* Ruby on Rails
+* PostgreSQL
 
-* System dependencies
+## Services Used
+* Github
 
-* Configuration
+## Ruby Gems
+* Tailwind
+* Devise
+* Pundit
+* PG Search
+* Sidekiq
 
-* Database creation
+## APIs
+(todo)
 
-* Database initialization
+## Getting Started
+> (todo)
 
-* How to run the test suite
+## Features
+- [ ] Build a profile
+- [x] Create and see all watch lists
+- [ ] Search movies and add them to lists
+- [ ] Add stars and reviews to movies
+- [ ] Have friendships
+- [ ] Recommend movies to friends
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Authors
+[Margarida Rita](https://github.com/margaridarita)
