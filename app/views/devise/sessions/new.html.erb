@@ -1,0 +1,32 @@
+<div class="flex flex-col gap-4 items-center justify-center p-16">
+  <h2 class="text-xl text-center text-orange-600 font-bold">Log in</h2>
+
+  <div class="w-96">
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="space-y-4">
+        <%= f.input :email,
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "email", class: 'w-full border rounded' },
+                    label_html: { class: 'block' } %>
+        <%= f.input :password,
+                    required: true,
+                    input_html: { autocomplete: "current-password", class: 'w-full border rounded' },
+                    label_html: { class: 'block' } %>
+        <div class="flex items-center gap-2">
+          <%= f.input :remember_me, as: :boolean, label: false, input_html: { class: "border rounded"} %>
+          <label for="<%= resource_name %>_remember_me" class="ml-0.5">Remember me</label>
+        </div>
+      </div>
+
+      <div class="my-4 flex justify-left">
+        <%= f.button :submit, "Log in", class: 'text-black bg-lime-600 px-4 py-2 border border-white rounded hover:bg-black hover:text-white transition duration-200 m-auto' %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <p>No account yet? Unacceptable!</p>
+    <%= render 'devise/shared/links' %>
+  </div>
+</div>

@@ -12,6 +12,8 @@ module.exports = {
 			fontFamily: {
 				sans: ["Inter var", ...defaultTheme.fontFamily.sans],
 				inconsolata: ["Inconsolata", "sans"],
+				bebas: ['"Bebas Neue"', "sans"],
+				"barlow-condensed": ["Barlow Condensed", "sans"],
 			},
 		},
 	},
@@ -20,7 +22,7 @@ module.exports = {
 		require("@tailwindcss/aspect-ratio"),
 		require("@tailwindcss/typography"),
 		require("@tailwindcss/container-queries"),
-    require("@tailwindcss/line-clamp"),
+		require("@tailwindcss/line-clamp"),
 	],
 	variants: {
 		backgroundColor: ["responsive", "hover", "focus"],

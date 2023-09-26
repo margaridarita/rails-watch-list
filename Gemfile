@@ -72,3 +72,4 @@ gem "simple_form", github: "heartcombo/simple_form"
 
 gem "tailwindcss-rails", "~> 2.0"
 gem 'pg_search', '~> 2.3', '>= 2.3.6'
+gem 'devise', '~> 4.9', '>= 4.9.2'
