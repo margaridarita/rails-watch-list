@@ -8,6 +8,7 @@ This is a web application to save movies in watch lists and recommend them to fr
 
 The demo will only be added once the project is done, but here's a sneak peak of the styling:
 ![image](https://github.com/margaridarita/rails-watch-list/assets/110779743/60ffd352-fa97-49e6-90c9-ac92b2e2f533)
+![image](https://github.com/margaridarita/rails-watch-list/assets/110779743/c4bc62a8-7a8d-4424-9109-e0f1a2cbd77d)
 
 ## Technologies Used
 * Ruby 3.1.2
@@ -23,6 +24,7 @@ The demo will only be added once the project is done, but here's a sneak peak of
 * Pundit
 * PG Search
 * Sidekiq
+* Hotwire (turbo frames, turbo links, stimulus)
 
 ## APIs
 (todo)
